@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomsheetFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:layout_marginTop="20dp"
+            android:text="Enter Your Mobile Number"
+            android:textColor="#389F5D"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+
+            >
+
+        </TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_below="@id/title"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/mobilephone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView2"
+            android:layout_below="@id/title"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/check"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@id/animationView2"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#389F5D"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+
+        <EditText
+            android:id="@+id/phonetext"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/animationView"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedit"
+            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+            android:drawablePadding="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="+91-7698755454"
+            android:paddingStart="10dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/phonetext"
+            android:textColor="@color/white"
+            android:backgroundTint="#389F5D"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

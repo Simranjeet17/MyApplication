@@ -1,0 +1,12 @@
+<resources>
+    <string name="Mainstr"><u><b>Register</b></u></string>
+    <string name="app_name"><u>Demo</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello1">Home Fragment</string>
+
+    <string name="btmstr">By continuing you agree to the\n<u><b><font color="#389F5D">Terms of Service</font></b></u> &amp; <u><b><font color="#389F5D">Privacy Policy</font></b></u></string>
+    <string name="btmstr2">Have an account <u><b><font color="#389F5D">Sign in</font></b></u></string>
+    <string name="phoneExp">[+][0-9]{10,13}$</string>
+    <string name="emailpattern">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
+
+</resources>
